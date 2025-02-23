@@ -1,6 +1,7 @@
 package guru.springframework.msscjacksonexamples.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -15,6 +16,7 @@ public class BaseTest {
                 .id(UUID.randomUUID())
                 .lastUpdatedDate(OffsetDateTime.now())
                 .createdDate(OffsetDateTime.now())
+                 .myDate(LocalDate.now())
                 .build();
 
     }
